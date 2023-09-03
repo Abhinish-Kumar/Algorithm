@@ -51,6 +51,31 @@ Big o notation is used to measure the performance of the code ,how much time it 
 What happens if the array goes to larger and larger?Think about it...
 
 
+#### Let’s measure the performance of this function
+JavaScript gave us a tool performance.now() to check the performance of a program that how much time it took to solve a block of code.
+
+In your language, you may have a different option to do this. 
+
+```javascript
+const arr = ['apple'];
+function findNemo(fruits) {
+  let t0=performance.now();
+  for(let i=0;i<fruits.length;i++){
+    if(fruits[i] === 'apple'){
+      console.log("yes i found apple");
+    }
+  }
+  let t1=performance.now();
+  console.log("Call to find apple took " + (t1 -t0) + "millisecond");
+}
+findNemo(arr);
+//Run1 :-Call to find apple took 0.2999999523162842millisecond
+//Run 2 :-Call to find apple took 0.10000014305114746millisecond
+//Run 3 :-Call to find apple took 0.09999990463256836millisecond
+```
+
+
+
 
 
 
