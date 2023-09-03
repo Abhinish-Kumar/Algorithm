@@ -157,7 +157,7 @@ BIG O notation the language we use to talking about how long an algorithm takes 
 
 By using Big O we find that which algorith took more and less time to run.
 
-<img src="https://th.bing.com/th/id/OIP.ZRwR7EASHC93avMl-ns4aAHaEY?pid=ImgDet&rs=1" width="200px">
+<img src="https://th.bing.com/th/id/OIP.ZRwR7EASHC93avMl-ns4aAHaEY?pid=ImgDet&rs=1" width="400px">
 
 This is a chart of Big O notaiton to find that which code took more or less time.
 
@@ -171,8 +171,33 @@ when we grow biger and biger with our input how much does the algorithm or funct
 
 3. Green color in chart indicates that with the increase of input operation is not increases which is a good code.
 4. And red color indicates that as out input increases Operations are rapidally increases That increases Bad code because it took max time to run.
-
 5. Each operation takes time in a computer.
+
+<hr><hr>
+
+# Explore the chart of Big O notation
+
+What is the big O for findig the apple function 
+
+<img src="https://th.bing.com/th/id/R.cff1a34fb50717531e13ffcf9d089cb5?rik=EQdlVHDhS4JSiQ&riu=http%3a%2f%2fwww.101computing.net%2fwp%2fwp-content%2fuploads%2fBig-O-Notation-Linear-Algorithm.png&ehk=4G80cpT08jOZLg5Nu0QtpqFOfTv04XK4tfCViIoYlZI%3d&risl=&pid=ImgRaw&r=0" width="400px">
+
+see the chart it indicates that as the number of input increases the number of operation increases.Findapple function checks the every element of the array by appling operation on every array element.
+*** number of arr element = number of operation ***
+
+thats why our chart is linear.
+
+### Our findApple function have a BIG O notaion of 
+## 1. O(n) --linear time
+
+From where n come from?
+n is used because of its a standard form.
+n is a arbatory lettor i can put here any value.
+1. O(10)
+2. O(100)
+3. O(1000)
+
+Think it as a doctor treated his every patient in 30 minutes as the patient increases the operation also increases.
+
 
 
 
