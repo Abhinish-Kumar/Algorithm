@@ -74,6 +74,68 @@ findNemo(arr);
 //Run 3 :-Call to find apple took 0.09999990463256836millisecond
 ```
 
+### What happen if we have a larger array of elements?
+
+```javascript
+const arr = ['apple'];
+const lArray=['banana','papaya','orange','apple','banana','papaya','orange','banana','papaya','orange','banana','papaya','orange'];
+function findNemo(fruits) {
+  let t0=performance.now();
+  for(let i=0;i<fruits.length;i++){
+    if(fruits[i] === 'apple'){
+      console.log("yes i found apple");
+    }
+  }
+  let t1=performance.now();
+  console.log("Call to find apple took " + (t1 -t0) + "millisecond");
+}
+findNemo(arr);
+//Run1 :-Call to find apple took 0.3000001907348633millisecond
+//Run 2 :-Call to find apple took 0.09999990463256836millisecond
+//Run 3 :-Call to find apple took 0.20000004768371582millisecond
+```
+
+There is no very large difference between the first function and second function with more array elements.Because our computer is so fast 
+.The difference between one loop and 10 loop is not that big.
+
+### Increase the size of array and check again.
+
+```javascript
+const large = new Array(100).fill('apple');
+//Create a new array of size 100 and fill all index with the value 'apple'
+function findNemo(fruits) {
+  let t0=performance.now();
+  for(let i=0;i<fruits.length;i++){
+    if(fruits[i] === 'apple'){
+      console.log("yes i found apple");
+    }
+  }
+  let t1=performance.now();
+  console.log("Call to find apple took " + (t1 -t0) + "millisecond");
+}
+findNemo(large);//yes i found apple * 100
+```
+
+### Output with 100 elements
+1. 4.1000001430511475millisecond
+2. 4.900000095367432millisecond
+3. 5millisecond
+
+### Output with 1000 elements
+
+1. 35.700000047683716millisecond
+2. 50.89999985694885millisecond
+3. 52millisecond
+
+### Output with 10000 elements
+
+1. 419.09999990463257millisecond
+2. 387.5millisecond
+3. 374.5millisecond
+
+### Output with 100000 elements
+
+1. 3097.2999999523163millisecond
 
 
 
