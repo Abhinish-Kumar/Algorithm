@@ -18,7 +18,16 @@ How well a problem is solved is claculated by BIG O notation.
 2. Scalable :-We will cover in BIG O notation.
 
 ```javascript
-
+// Eg:1
+const arr = ['apple'];
+function findNemo(fruits) {
+  for(let i=0;i<fruits.length;i++){
+    if(fruits[i] === 'apple'){
+      console.log("yes i found apple");
+    }
+  }
+}
+findNemo(arr);//yes i found apple
 ```
 
 
