@@ -129,13 +129,51 @@ findNemo(large);//yes i found apple * 100
 
 ### Output with 10000 elements
 
-1. 419.09999990463257millisecond
+1. 419.09999990463257millisecond 
 2. 387.5millisecond
 3. 374.5millisecond
 
 ### Output with 100000 elements
 
-1. 3097.2999999523163millisecond
+1. 3.5 seconds
+
+# Here we see that as our input grows out function findNemo() becomes slower and slower.
+
+If you run the same code in your computer your time can be different frome me.
+It also depends on how powerful cpu and the computer you have.
+Which programming language you use and which program you try to run.
+
+
+All these features handles the speed of your code.
+
+If you all have same pc or computer but still have a difference in performance ? why..
+
+The person who write a good code tooks less time to run a program?
+
+So what is a good code?
+
+#### BIG O 
+BIG O notation the language we use to talking about how long an algorithm takes to run
+
+By using Big O we find that which algorith took more and less time to run.
+
+<img src="https://th.bing.com/th/id/OIP.ZRwR7EASHC93avMl-ns4aAHaEY?pid=ImgDet&rs=1" width="200px">
+
+This is a chart of Big O notaiton to find that which code took more or less time.
+
+
+### Big O and Scalability of code means that:-
+when we grow biger and biger with our input how much does the algorithm or function slow down.
+
+1. In chart the bottom line indicates the number of input elements.
+2. The horizontal line indicates how many operations we have to do .
+   All the above is called as algorithmic efficiency.
+
+3. Green color in chart indicates that with the increase of input operation is not increases which is a good code.
+4. And red color indicates that as out input increases Operations are rapidally increases That increases Bad code because it took max time to run.
+
+5. Each operation takes time in a computer.
+
 
 
 
