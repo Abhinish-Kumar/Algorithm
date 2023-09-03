@@ -191,12 +191,51 @@ thats why our chart is linear.
 
 From where n come from?
 n is used because of its a standard form.
-n is a arbatory lettor i can put here any value.
+n is a arbatory lettor we can put here any value.
 1. O(10)
 2. O(100)
 3. O(1000)
 
-Think it as a doctor treated his every patient in 30 minutes as the patient increases the operation also increases.
+Think it as a doctor treated his single patient in 30 minutes as the patient increases total  time to treat all the patient also increases.
+
+# 2. O(1) --Constant Time 
+
+#### What is the big a for the below code?
+```javascript
+function takeArr(boxes){
+console.log(boxes[0]);
+}
+```
+Here no matter how many times the boxes increase or haw may boxes we have ,we just have to grab the first element.
+
+<img src="https://www.section.io/engineering-education/big-o-notation/o-1.png" width="400px">
+
+We can see clearly in the graph that we have only one operation with so many inputs Thats why our program took constant time to deals with n number of input elements.
+
+### What if we have a different function like the below?
+
+What is the BIG O for this function?
+How do we measure the BIG O for this function?
+```javascript
+const boxes=[0,1,2,3,4,5,6,7,8];
+function takeArr(boxes){
+console.log(boxes[0]); //O(1) number of operation
+console.log(boxes[1]); //O(2)
+}
+takeArr(boxes);  //O(2)
+```
+
+Our funcion call do 2 operations every time no matter the number of inputs.
+
+<img src="https://i.imgur.com/DpSLIzO.jpg" width="400px">
+
+In the above graph the green line goes one step up when O(1) + O(1) = O(2).
+
+#### we always write O(1) for O(4),O(10) or more which is made by the combination of singel operation or O(1) + O(1) + O(1)
+
+
+For a flat line BIG O is always O(1) for any number of inputs.
+
 
 
 
