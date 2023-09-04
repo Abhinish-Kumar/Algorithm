@@ -330,9 +330,41 @@ running
 
 This is not a efficient code so Lets make it efficient.
 
+```javascript
+const every=[1,2,3,4,5,6,7,8,9,10];
+
+function find(arr) {
+  for(let i=0;i<arr.length;i++){
+    console.log("running");
+    if(arr[i]==5){
+      console.log('Found 5 !!!');
+break;
+    }
+  }
+}
+
+find(every);
+```
+
+```javascript
+running
+running
+running
+running
+running
+running
+ Found 5 !!!
+```
+
+Here when we find our ans or occurance the loop will break;
 
 
+1. Big O only cares about the worst case.
+2. SO what is the worst case here.
+3. The worst case in the above code is that if is at last.
+4. And best case is if the 5 is at the very begining.
 
+# Rule 2 
 
 
 
