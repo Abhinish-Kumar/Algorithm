@@ -364,7 +364,8 @@ Here when we find our ans or occurance the loop will break;
 3. The worst case in the above code is that if is at last.
 4. And best case is if the 5 is at the very begining.
 
-# Rule 2 
+# Rule 2 Remove Constants
+
 
 
 
