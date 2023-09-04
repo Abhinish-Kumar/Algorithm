@@ -236,7 +236,26 @@ In the above graph the green line goes one step up when O(1) + O(1) = O(2).
 
 For a flat line BIG O is always O(1) for any number of inputs.
 
+### Try this 
+```javascript
+function funChalange(input){
+  let a= 10; //O(1)
+  a=50+3;   //O(1)
 
+  for(let i=0;i<input.length;i++){  //O(n) its call depends on the length of the input
+    anotherFunciton();  //O(n) runs every time
+    let stranger = true;  //O(n)
+    a++;  //O(n)
+  }
+  return a; //O(1)
+}
+
+funChalange();
+```
+
+To find the eficiency of the funciton lets calculater the value of BIG O.
+#### 1+1+1+n+n+n+n=3+4n
+So that BIG O notation for this funciton is O(3+4n)
 
 
 
