@@ -283,6 +283,53 @@ Calculate the BIG O.
 
 BIG O(4+7n)
 
+## Simplifying BIG O
+
+#### Ans of 1st chalange is O(n)
+#### Ans of 2nd chalange is O(n)
+
+
+There are several rules that you have to follow for this.
+
+Rule 1. Worst Case.
+Rule 2. Remove Constants.
+Rule 3. Different terms for inputs.
+Rule 4. Drop Non Dominants.
+
+
+# Rule 1 Worst Case
+
+
+```javascript
+const every=[1,2,3,4,5,6,7,8,9,10];
+
+function find(arr) {
+  for(let i=0;i<arr.length;i++){
+    console.log("running");
+    if(arr[i]==5){
+      console.log('Found 5 !!!');
+    }
+  }
+}
+
+find(every);
+```
+
+```javascript
+running
+running
+running
+running
+running
+running
+ Found 5 !!!
+running
+running
+running
+```
+
+This is not a efficient code so Lets make it efficient.
+
 
 
 
