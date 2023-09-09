@@ -365,6 +365,68 @@ Here when we find our ans or occurance the loop will break;
 4. And best case is if the 5 is at the very begining.
 
 # Rule 2 Remove Constants
+####  Q1 Orint first item,first half item and say 100 times hayy.
+```javascript
+
+function printFirstItemThenFirstHalfSayhi100TImes(items){
+    console.log(items[0]); // O(1)
+    var middleIndex=Math.floor(items.length/2);
+    var index=0;
+    while(index<middleIndex){
+        console.log(items[index]); //  O(n/2)
+        index++;
+    }
+    for(var i=0;i<100;i++){
+        console.log('hi');  // O(100)
+    }
+}
+
+a=[1,2,3,4,5,6,7,8,9,10]
+printFirstItemThenFirstHalfSayhi100TImes((a));
+
+```
+
+
+What is the BIG O of this function.
+Note :- We are ignoring variable assignments and small calculations for this example.
+#### O(1+n/2+100)
+
+By using the rule number 2 we drop the constants.
+1. Adding 100 to the array element has no very effect on n number of array elements.(O(n/2+1)).
+2. Also we remove n from here because no matter how long is our aray we have to do its half every time.(O(n+1)).
+3. We also remove 1 from it beacuse it also has no effect on our n number of array elements.
+4. Finally (O(n)) is the value of BIG O.
+5. If (O(n+5000000000)) it does not matter how long or small is our constant we just have to remove it.
+
+### If we have another situation having 2 for loops doing same thing in the function.
+What is the BIG O for this.
+
+```javascript
+function compressBoxesTwice(boxes){
+  boxes.forEach(function(boxes){
+    console.log(boxes);
+  })
+
+  boxes.forEach(function(boxes){
+    console.log(boxes);
+  })
+}
+
+a=[1,2,3,4,5,6,7];
+compressBoxesTwice(a);
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
