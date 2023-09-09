@@ -425,6 +425,31 @@ But We remove constant from here because It is still a linear graph.
 Because as the number of array element s increases number of operation is always two.So it has no effect on number of operatins because all operations is coverd in the same time frame so we remove the 2 which is constant here.
 Here we dont care that how is the line of graph we care only for how the line moves in this case it moves linearly so the BIG O is (n).
 
+# Rule 2 Different terms for inputs.
+What if we have two inputs.
+
+```javascript
+function compressBoxesTwice(boxes,boxes2){
+  boxes.forEach(function(boxes){
+    console.log(boxes);
+  })
+
+  boxes2.forEach(function(boxes){
+    console.log(boxes);
+  })
+}
+
+a=[1,2,3,4,5,6,7];
+b=[8,9,10,11,12,13];
+compressBoxesTwice(a,b);
+```
+
+Here we have two inputs one is may be 100 and second is 1000000.
+
+### n is the arbitorry letter.
+
+The BIG O of this function is 
+### O(n+m)
 
 
 
