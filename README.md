@@ -482,6 +482,7 @@ We have the 3² elements so as we increase the number of elements our operations
 
 ## Rule no 4 = Drop Non Dominants.
 
+# Big O Rule 4
 
 
 
