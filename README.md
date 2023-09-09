@@ -451,6 +451,42 @@ Here we have two inputs one is may be 100 and second is 1000000.
 The BIG O of this function is 
 ### O(n+m)
 
+## O(n*n) or O(n²)
+
+Q1 Log all the pairs of the array.(important)
+
+```javascript
+function logALlPairsOfArr(array){
+  for(let i=0;i<array.length;i++){
+     for(let j=0;j<array.length;j++){
+    console.log(array[i],array[j]);
+  }
+  }
+}
+
+logALlPairsOfArr([1,2,3,4,5]);
+```
+
+What is the BIG O of this.
+
+### O(n*n)  or O(n²)
+O(n²) = Quadratic Time
+
+<img src="https://th.bing.com/th/id/OIP.FkQzWqqIMlAHZ_xNrEPKeAHaGZ?pid=ImgDet&rs=1" width="400px" />
+
+Wen we increate the number of elements it increases quadratically.
+
+It means in first step we have 4 operations and in second step we have 8 operations.
+We have the 3² elements so as we increase the number of elements our operations will increase rappidly and make a curve in graph.
+
+
+## Rule no 4 = Drop Non Dominants.
+
+
+
+
+
+
 
 
 
