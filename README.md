@@ -415,6 +415,18 @@ function compressBoxesTwice(boxes){
 a=[1,2,3,4,5,6,7];
 compressBoxesTwice(a);
 ```
+### O(2n) we jsut add both?NO
+We drop the constant here 
+### O(n)
+<img src="https://us-static.z-dn.net/files/d7d/e7976bdb7b655d9b3727614fb46556b8.png" width="400px"/>
+
+in the above graph we have two steps with same array Whose BIG O is (O(2n)).
+But We remove constant from here because It is still a linear graph.
+Because as the number of array element s increases number of operation is always two.So it has no effect on number of operatins because all operations is coverd in the same time frame so we remove the 2 which is constant here.
+Here we dont care that how is the line of graph we care only for how the line moves in this case it moves linearly so the BIG O is (n).
+
+
+
 
 
 
