@@ -480,9 +480,62 @@ It means in first step we have 4 operations and in second step we have 8 operati
 We have the 3² elements so as we increase the number of elements our operations will increase rappidly and make a curve in graph.
 
 
-## Rule no 4 = Drop Non Dominants.
+# Rule no 4 = Drop Non Dominants.
 
-# Big O Rule 4
+```javascript
+ function printAllNumbersThenAllPairSums(numbers) {
+        console.log("These are the numbers");
+        numbers.forEach((number) => {
+          console.log(number);
+        });
+
+        console.log("And these are their sums ");
+        numbers.forEach((firstNumber) => {
+          numbers.forEach((secondNumber) => {
+            console.log(firstNumber + secondNumber);
+          });
+        });
+      }
+
+      printAllNumbersThenAllPairSums([1, 2, 3, 4, 5]);
+```
+```Javascript
+//Output
+These are the numbers
+ 1
+ 2
+ 3
+ 4
+ 5
+And these are their sums 
+ 2
+ 3
+ 4
+ 5
+ 6
+ 3
+ 4
+ 5
+ 6
+ 7
+ 4
+ 5
+ 6
+ 7
+ 8
+ 5
+ 6
+ 7
+ 8
+ 9
+ 6
+ 7
+ 8
+ 9
+10
+```
+
+
 
 
 
