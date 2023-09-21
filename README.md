@@ -486,13 +486,13 @@ We have the 3² elements so as we increase the number of elements our operations
  function printAllNumbersThenAllPairSums(numbers) {
         console.log("These are the numbers");
         numbers.forEach((number) => {
-          console.log(number);
+          console.log(number);//O(n)
         });
 
         console.log("And these are their sums ");
         numbers.forEach((firstNumber) => {
           numbers.forEach((secondNumber) => {
-            console.log(firstNumber + secondNumber);
+            console.log(firstNumber + secondNumber);//O(O²)
           });
         });
       }
@@ -535,8 +535,22 @@ And these are their sums
 10
 ```
 
+### What is the BIG O for the above code?
 
+O(n + n²)
 
+#### Use here 4th rule (Drop Non Dominents)
+That means we only care about the most important term or the term wich dominant.This is because as the number of element is increases the n is less importance because the n² is bigger than that SO that we always keep the dominent term.
+
+##### O(x²+3x+100+x/2)
+By removing the non Dominating term we get the BIG O = O(x²)
+1. 500*2=5500
+2. 500/2=250
+3. 500*3=1500
+
+Thats why we let the x² as the Dominating term.
+
+NOTE := The n² is very bad.(nested looping)
 
 
 
