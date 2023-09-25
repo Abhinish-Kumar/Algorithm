@@ -728,12 +728,44 @@ These are the Three ways to write the same code.
 2. Linear time algorithm is better than the constant time algorithm.
 3. At last you know How to alalyse the code of others and you are able to find the difference between good and bad code.
 
+# Chapter 2
+# How to solve coding problems.
+
+An interwiew is the way to find that are you able to solve the problem or not.
+
+Just like a real life of coding you not neet to remember the things you have to deeply analyze the code.
+
+### What are Companies Lookingfor.
+
+1. Analytical Skills
+2. Coding Skills
+3. Technical skills
+4. Communication Skills.
+
+Analytical skill is all about how you think for a problrm 
+
+### Continue with these Data Structures And Algorithms.
+
+1. Arrays
+2. Stacks
+3. Queues
+4. Linked Lists
+5. Trees
+6. Tries
+7. Graphs
+8. Hash Tables
+
+#### Algorithms
+
+1. Shorting
+2. Dynamic Programming
+3. BFS + DFS (Searching)
+4. Recursion
 
 
+### You not need to learn all the words of a dictionarry just learn the things that makes you able to communicate with others.
 
-
-
-
+<a href='https://www.youtube.com/watch?v=XKu_SEDAykw' >What this google interview </a>
 
 
 
