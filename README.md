@@ -649,6 +649,42 @@ In our case we created variable,Datastructure(new array).
 ### O(n) because we fill the hi as the number of input.
 
 
+# Exercise Twitter
+
+```javascript
+//Find the most recent tweet and oldest tweet
+const array = ["hi","my","teddy"];
+array[0];  //O(1)
+array[array.length-1] //O(1)
+```
+
+### What is the big O for the below O(n pow 2) because we have to compare it with all its values.
+
+```javascript
+//Also with date
+const array = [
+    {
+        tweet:'hi',
+        date:2020
+    },
+    {
+        tweet:'hello',
+        date:2010
+    },
+    {
+        tweet:'good',
+        date:2000
+    },
+    ]
+```
+
+#### what is the big O of arr.length
+
+What is the big O notation of this .length 
+
+## Ans its not a funciton that have to run its simple a builtin property of object its big o is (O(1)) constant time.
+
+
 
 
 
