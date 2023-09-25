@@ -552,6 +552,10 @@ Thats why we let the x² as the Dominating term.
 
 NOTE := The n² is very bad.(nested looping)
 
+# Summary What does all these mean
+
+<a href='https://www.bigocheatsheet.com/' >BIG O cheatsheet</a>
+
 
 
 
