@@ -590,6 +590,64 @@ When programs executes there are two ways to remember things Heap and Stack.
 3. functions
 4. Allocation
 
+### Exercise Space complexity
+
+```javascript
+function foooo(n){
+    for(let i=0;i<n.length;i++){
+        console.log("boooooo!")
+    }
+}
+
+foooo([1,2,3,4,5])
+```
+
+```javascript
+boooooo!
+boooooo!
+boooooo!
+boooooo!
+boooooo!
+
+```
+
+##### What is the time complexity of this function?
+When we are tawlking about space complexity we are tawlking about additional space.
+We really dont care how big the input is.
+We really dont have controll over the input we only have a controll on what happens inside the funciton.
+
+#### ans BIG O(1) space complexity
+because we are not adding any more memory in the above funciotn.
+
+### What if we have ?
+
+```javascript
+function arrayOfHiNTimes(n){
+    let hiArray=[];
+    for(let i=0;i<n;i++){
+       hiArray[i]="hi";
+    }
+    return hiArray;
+};
+
+console.log(arrayOfHiNTimes(6)) //O(n)
+```
+
+```javascript
+[ 'hi', 'hi', 'hi', 'hi', 'hi', 'hi' ]
+```
+
+### What is the space Complexity of this function?
+1. Variable
+2. Data structure
+3. functions
+4. Allocation
+
+these things take care of space complexity.
+In our case we created variable,Datastructure(new array).
+
+### O(n) because we fill the hi as the number of input.
+
 
 
 
