@@ -556,6 +556,50 @@ NOTE := The n² is very bad.(nested looping)
 
 <a href='https://www.bigocheatsheet.com/' >BIG O cheatsheet</a>
 
+### Datastructure + Algorithms = Programs
+
+Datastructure are simply store data and algorithm is the functions that always use ds to write our programs.
+
+#### whats the write datastructure and whats the write algorithm to write the program.
+
+# O(n!) ohno! dont use this
+
+# What is a Good code?
+
+1. Redable
+2. Scalable.
+
+Scalable 
+1. -speed:-How fast your code run.How many time it took to run.How many operation does it perform.
+2. Memory:- Computers have limited memory.(RAM)
+
+   1. Redable and clean code (maintanable)
+   2. Speed (Time Complexity)
+   3. Memory (Space Complexity)
+
+# Space Complexity
+When programs executes there are two ways to remember things Heap and Stack.
+#### Heap - store variables and where we assign values.
+
+#### Stack - Where we keep track of our function calls.
+
+## What Causes space Complexity.
+
+1. Variable
+2. Data structure
+3. functions
+4. Allocation
+
+
+
+
+
+
+
+
+
+
+
 
 
 
