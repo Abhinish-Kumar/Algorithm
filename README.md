@@ -724,6 +724,12 @@ These are the Three ways to write the same code.
 
 # Summary of BIG O
 
+1. Some time by thinking about scalability we forgot the readability of the code.
+2. Linear time algorithm is better than the constant time algorithm.
+3. At last you know How to alalyse the code of others and you are able to find the difference between good and bad code.
+
+
+
 
 
 
