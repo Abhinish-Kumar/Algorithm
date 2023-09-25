@@ -767,7 +767,8 @@ Analytical skill is all about how you think for a problrm
 
 <a href='https://www.youtube.com/watch?v=XKu_SEDAykw' >What this google interview </a>
 
-
+# Q1 
+Given 2 Arrays ,create a function that let's 
 
 
 
