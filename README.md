@@ -678,11 +678,55 @@ const array = [
     ]
 ```
 
-#### what is the big O of arr.length
+###### what is the big O of arr.length
 
 What is the big O notation of this .length 
 
 ## Ans its not a funciton that have to run its simple a builtin property of object its big o is (O(1)) constant time.
+
+
+# There is a so many ways to loop in javascript 
+1. forEach:
+
+```javascript
+let arr=[1,2,3,4,5]
+
+const find3=array=>{
+    array.forEach(number=>{
+        if(number==3){
+            console.log("found 3")
+        }
+    })
+}
+
+find3(arr);
+
+//Found 3
+```
+
+2. For in loop
+```javascript
+let arr=[1,2,3,4,5]
+
+const find3=array=>{
+   for(let fish of array){
+        if(fish==3){
+            console.log("found 3")
+        }
+    }
+}
+
+find3(arr);
+
+//Found 3
+```
+These are the Three ways to write the same code.
+
+# Summary of BIG O
+
+
+
+
 
 
 
