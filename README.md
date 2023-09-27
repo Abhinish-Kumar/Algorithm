@@ -987,8 +987,27 @@ These two things allow us to write programs.
 A Person who knows How DSA works can write a great code.Libraries can be change but fundamentalsa and algorithm concepts are always same thats why big tech companies ask questions in DSA.
 
 ## What is a Data Structue?
+A Data Structure is a collection of values.The values can have relationship among them and they can have different funcitonality.
 
+##### eg
+A data structure is simply a file cabinate of different type like:-bag,drower,toy box,friz,folder etc.
+1. Each container has its own storing characteristic like i am not goint to put cake in almira ,and files into frizz,
+2. Each container is specified for its own thing,
+3. Data Structure is simple to organize our data so that we can easily retrive our data and grab that item very fast.
+4. There are so many data structure.
+5. Like we collect fruits and delever it to a grocerry store and organizing them in grocerry stores so that humans can grab those and buy it so its a real life scenerio.
+6. Each Data Structure has its own specific case of advantage.
 
+   ### 2 parts to understand Data Structure
+
+   1. How to build one?
+   2. How to use it (80% importance)
+   Because Data structure are some time prebuilt so we have only to focus about How to use it;
+
+Pick write Data Structure for your problem.
+For any senerio data needs to be stored in specific containers.
+  
+  
 
 
 
