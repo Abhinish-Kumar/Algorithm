@@ -817,7 +817,34 @@ etc.. What is the main goal?(ask question array of length is fix or n)
 5.  Start with the naive/brute force approach. First thing that comes into mind. It shows that
 you’re able to think well and critically (you don't need to write this code, just speak about it)(in our question we have to create two for loops to compare single array value to whole array element of the second array)
 
-6. 
+6. Tell them why this approach is not the best (i.e. O(n^2) or higher, not readable, etc...(there are two nested loops which is a bad thing because of BIG O)
+7. Walk through your approach, comment things and see where you may be able to break things.
+Any repetition, bottlenecks like O(N^2), or unnecessary work? Did you use all the information
+the interviewer gave you? Bottleneck is the part of the code with the biggest Big O. Focus on
+that. Sometimes this occurs with repeated work as well
+
+8. Before you start coding, walk through your code and write down the steps you are going to
+follow
+
+```javascript
+//Most usable pattern
+array1==>obj{
+a:true,
+b:true,
+c:true,
+d:true}
+array2[index]===obj.properties;
+```
+```javascript
+//Write down the steps
+
+
+function containCommonItem2(arr1,arr2){
+//loop through first array and create object were properties === items in the array
+//loop through second array and check if item in second array exists on created objects.
+}
+```
+##### BIG O(a+b) this is good code you make the code better
 
 
 
