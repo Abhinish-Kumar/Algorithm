@@ -768,8 +768,56 @@ Analytical skill is all about how you think for a problrm
 <a href='https://www.youtube.com/watch?v=XKu_SEDAykw' >What this google interview </a>
 
 # Q1 
-Given 2 Arrays ,create a function that let's 
+Given 2 Arrays ,create a function that let's a user know (true/false) whether these two arrays contain any common items 
 
+```javascript
+\\for example
+\\const array[1,2,3,4,5];
+\\const array2[13,23,33,43,5];
+\\should return true
+
+
+\\const array[1,2,3,4,5];
+\\const array2[13,23,33,43,53];
+\\should return false
+
+```
+
+```javascript
+function checkCommon(arr1,arr2){
+    for(let i=0;i<arr1.length;i++){
+        for(let j=0;j<arr2.length;j++){
+        if(arr1[i]==arr2[j]){
+            return true;
+        }
+    }
+      
+    }
+  return false;
+}
+
+
+console.log(checkCommon([11,27,3],[1,2,3]))
+\\true
+\\BIG O(n pow 2) or O(n*n)
+\\this is bad code according to BIG O notation
+```
+
+### Note before code in interview
+
+#### Step By Step through a problem
+1. When the interviewer says the question, write down the key points at the top (i.e. sorted
+array). Make sure you have all the details. Show how organized you are.(2 parameters.return true or false)
+
+2. Make sure you double check: What are the inputs? What are the outputs?
+3. What is the most important value of the problem? Do you have time, and space and memory,
+etc.. What is the main goal?(ask question array of length is fix or n)
+
+4.  Don't be annoying and ask too many questions.(first create the image of the question without dought because you have no time to make mistakes in interview)
+5.  Start with the naive/brute force approach. First thing that comes into mind. It shows that
+you’re able to think well and critically (you don't need to write this code, just speak about it)(in our question we have to create two for loops to compare single array value to whole array element of the second array)
+
+6. 
 
 
 
