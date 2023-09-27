@@ -846,6 +846,63 @@ function containCommonItem2(arr1,arr2){
 ```
 ##### BIG O(a+b) this is good code you make the code better
 
+##### Solve first step
+```javascript
+//Write down the steps
+
+
+function containCommonItem2(arr1,arr2){
+//loop through first array and create object were properties === items in the array
+let map={};
+for(let i=0;i<arr1.length;i++){
+    //if(!map[i])  or
+
+    if(!map[arr1[i]]){
+        const item=arr1[i];
+        map[item]=true;
+    }
+}
+console.log(map);
+//loop through second array and check if item in second array exists on created objects.
+}
+
+containCommonItem2(['a','b','c'],['d','e']);
+
+\\{ a: true, b: true, c: true }
+```
+##### Solve second step
+
+```javascript
+function containCommonItem2(arr1,arr2){
+//loop through first array and create object were properties === items in the array
+let map={};
+for(let i=0;i<arr1.length;i++){
+    if(!map[i]){
+        const item=arr1[i];
+        map[item]=true; //map[a]=true ---{a:tree}
+    }
+}
+console.log(map);
+//loop through second array and check if item in second array exists on created objects.
+
+for(let j=0;j<arr2.length;j++){
+    if(map[arr2[j]]){
+        return true;
+    }
+}
+return false;
+}
+
+containCommonItem2(['a','b','c'],['d','e']);
+console.log(containCommonItem2(['a','b','c'],['d','e']))
+console.log(containCommonItem2(['a','b','c'],['d','c']))
+
+\\ BIG O(a+b) because of two steps are there only which is better then nesting
+```
+
+##### note
+1. ! this turns the true into false and false into true
+
 
 
 
