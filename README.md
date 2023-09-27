@@ -902,6 +902,70 @@ console.log(containCommonItem2(['a','b','c'],['d','c']))
 
 ##### note
 1. ! this turns the true into false and false into true
+2. O(a+b) time complexity is achieved
+
+
+9.Modularize your code from the very beginning. Break up your code into beautiful small pieces
+and add just comments if you need to
+
+10.Start actually writing your code now. Keep in mind that the more you prepare and understand
+what you need to code, the better the whiteboard will go. So never start a whiteboard
+interview not being sure of how things are going to work out. That is a recipe for disaster.
+Keep in mind: A lot of interviews ask questions that you won’t be able to fully answer on time.
+So think: What can I show in order to show that I can do this and I am better than other
+coders. Break things up in Functions (if you can’t remember a method, just make up a function
+and you will at least have it there. Write something, and start with the easy part.
+
+11. Think about error checks and how you can break this code. Never make assumptions about the
+input. Assume people are trying to break your code and that Darth Vader is using your
+function. How will you safeguard it? Always check for false inputs that you don’t want. Here is
+a trick: Comment in the code, the checks that you want to do… write the function, then tell the
+interviewer that you would write tests now to make your function fail (but you won't need to
+actually write the tests).
+
+##### Lets try to break code remove unwanted things and try it with different type of inputs
+
+1. ['a',1,'c'];
+2. Object properties are turned into strings when created
+3.  ['a',[],'c']; \\true
+4.  ['a',null,'c']; \\true
+
+#### what happens when the function is called with just one array we get an error make it error free. try possible vlause to use and make it eoor free.
+
+1. if i pass 2nd parameter 0. (arr1,0)//false
+2.  (arr1,null) //error
+3.  Write better name for your variable.
+
+### Make this code more redable by using the methods of that specific programming language here we use (SOME)
+
+
+```javascript
+function containCommonItem2(arr1,arr2){
+return arr1.some(item => arr2.includes(item))
+}
+
+console.log(containCommonItem2(['a','b','c'],['d','e']))
+console.log(containCommonItem2(['a','b','c'],['d','c']))
+```
+
+
+
+
+12. Don’t use bad/confusing names like i and j. Write code that reads well
+13. Test your code: Check for no params, 0, undefined, null, massive arrays, async code, etc… Ask
+the interviewer if we can make assumption about the code. Can you make the answer return
+an error? Poke holes into your solution. Are you repeating yourself?
+
+15. Finally talk to the interviewer where you would improve the code. Does it work? Are there
+different approaches? Is it readable? What would you google to improve? How can
+performance be improved? Possibly: Ask the interviewer what was the most interesting
+solution you have seen to this probles
+
+#### Also deal with space complexity O(a*b) = O(1) because no new variable is created in first code.
+
+
+#### write a modular code means make your code in peaces that every peace has a single or limited work to do.
+
 
 
 
