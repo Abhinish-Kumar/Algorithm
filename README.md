@@ -961,10 +961,39 @@ different approaches? Is it readable? What would you google to improve? How can
 performance be improved? Possibly: Ask the interviewer what was the most interesting
 solution you have seen to this probles
 
+ 16.If your interviewer is happy with the solution, the interview usually ends here. It is also
+common that the interviewer asks you extension questions, such as how you would handle the
+problem if the whole input is too large to fit into memory, or if the input arrives as a stream.
+This is a common follow-up question at Google, where they care a lot about scale. The answer
+is usually a divide-and-conquer approach — perform distributed processing of the data and only
+read certain chunks of the input from disk into memory, write the output back to disk and
+combine them later
+
 #### Also deal with space complexity O(a*b) = O(1) because no new variable is created in first code.
 
 
 #### write a modular code means make your code in peaces that every peace has a single or limited work to do.
+
+# Google question is left
+
+# Chapter 4  (intro Data structure)
+
+A DataStructure is a collection of values. amd Algorithms are steps or processes we put into place to manipulate these collection of values.
+
+These two things allow us to write programs.
+
+##### DataStructure + Algorithm = Program
+
+A Person who knows How DSA works can write a great code.Libraries can be change but fundamentalsa and algorithm concepts are always same thats why big tech companies ask questions in DSA.
+
+## What is a Data Structue?
+
+
+
+
+
+
+
 
 
 
