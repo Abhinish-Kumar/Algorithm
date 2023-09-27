@@ -1006,6 +1006,7 @@ A data structure is simply a file cabinate of different type like:-bag,drower,to
 
 Pick write Data Structure for your problem.
 For any senerio data needs to be stored in specific containers.
+
   
   
 
