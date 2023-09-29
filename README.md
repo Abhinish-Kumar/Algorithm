@@ -8,8 +8,10 @@ For this course, you do not need to worry about any specific language. Pick any 
 All these companies hire a person who has excellent problem-solving skills. So continue with me and be a problem solver to get a job…
 
 ## What is a algorithm?
-An algorithm is a fintie number of step to solve a problem.Steps to bake a cake.
+An algorithm is a  sequence of finite steps to solve a particular problem.Steps to bake a cake.
 Learn with visualization.You can create a defination of all the keypoints while visualizing the things in algorithm.
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191016135223/What-is-Algorithm_-1024x631.jpg" width="80%" />
 
 ## 1 BIG O 
 How well a problem is solved is claculated by BIG O notation.
