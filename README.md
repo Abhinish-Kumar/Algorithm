@@ -1021,10 +1021,24 @@ So why we not use the Storage to not to loose our data? because its slow .Our co
 When we are soing any task on CPU it is stored in RAM and when we close the computer all the data goes.SO we need to make it permanent.
 
 ##### Why Ram is faster then Rom??? 
+##### What is a 32 bit computer?
 
 <img src="https://3.bp.blogspot.com/-lpqgSfYz2F4/U0aCl8H7S1I/AAAAAAAABro/4gjyL8n68-s/s1600/Cache+memory.jpg" width="500px" >
 
-### 
+### How Ram cpu and rom works?
+<img src="controll.png" width="100%" >
+8 Numbers in every shell and earch number is a Bit and a Bit is a tiny electrical switch that can be turned on or off that represents 0 and 1.
+Each shelf has one byte of storage and cpu is connected to memory controller and memory controller does the actual reading of all these self.
+The connection of cpu to memory controller is important because CPU asks to the memory hey what is in shelf 1.
+Memoery controller is connected to all the shelfs .it can access  272 indexes without retriving because its individually connected to all the shelfs.
+Thats why its name is Ramdom Access Memory.
+The smallesr the indexes 1--1000 its easy to read and write for CPU.
+Thats why we reboot to make our device fast.
+
+##### what is CPU cash?
+The cpu has a Tiny memory to store recent copy of data.
+
+
 
 
 
