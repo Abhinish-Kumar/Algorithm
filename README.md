@@ -1038,7 +1038,29 @@ Thats why we reboot to make our device fast.
 ##### what is CPU cash?
 The cpu has a Tiny memory to store recent copy of data.
 
+##### What is Byte?
+Think my Computer has 32 GB of memory 
 
+<img src="https://www.schoolcoders.com/img/data-representation/binary/byte.png" width="500px">
+
+#### 32GB = 32*1000000000 Bytes
+Each Bytes contain 8 Bits of storage And one bit is a state.It can be 0 and 1..
+
+The combination of 8 bits of data represent so many values 8 Bit can reprenet 256 states of data.
+How can we represent Characters??We map the numbers from(256) to characters So we can call that Number 97 is a and 98 is b.Thats why we have ASCII character code where numbers are maped with characters 
+
+
+##### How to access the data from the memory?
+The small accessible unit of memory is Byte Our CPU can access a package of 8 bits and it can not access single Bit .Every Shelf has a address and to access the data from memory we need that address.
+Example if we have a 1MB of memory The address of first Byte is 0 and last byte is 1048575 
+##### 1Kilobyte = 1024 Bytes
+##### 1Megabyte = 1024 Kilobytes
+##### 1Megabyte =1024*1024 Bytes = 1048576 Bytes
+
+Usually The memory address is represented by Hexadecimal codes So the address of first element of MB is (0x00000) and last is (0xFFFFF)
+
+##### Does a Integer or string require One Byte only?
+Some data types require more memory then others Like Integer require 4Bytes to store a integer and a Character on a string  only take 1Byte.
 
 
 
