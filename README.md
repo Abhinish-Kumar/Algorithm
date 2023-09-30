@@ -1009,6 +1009,16 @@ A data structure is simply a file cabinate of different type like:-bag,drower,to
 Pick write Data Structure for your problem.
 For any senerio data needs to be stored in specific containers.
 
+
+## How computers work?
+1. What is a Memory and what is the difference between Ram and HDD?
+Ans:-Memory is just storage.Ram and HDD both store data but the difference beteen them is that storing and retriving data in Ram is lot faster than HDD.But HDD storage is persistance meaning is that if you turn off the computer data will still be there but the data stored in ram is volatile means if you turn off the computer every thing in Ram will  gone.Ram is a Temporary space to work in.
+In Order to keep track of a code computer needs to keep track of variables like Numbers,Strings and arrays.
+If you run a program the variable in the code will store in ram Is Quickly retrived by the cpu But if you off the computer the variables in the computer ram will gone.
+So why we not use the Storage to not to loose our data? because its slow .Our computer runs bu CPU (to do alll the calculations) It does the actual work in the computer.And CPU can access the values from the RAM alot faster.
+When we are soing any task on CPU it is stored in RAM and when we close the computer all the data goes.SO we need to make it permanent.
+
+
   
   
 
