@@ -1063,7 +1063,49 @@ Usually The memory address is represented by Hexadecimal codes So the address of
 Some data types require more memory then others Like Integer require 4Bytes to store a integer and a Character on a string  only take 1Byte.
 
 
+#### Why its important for Data Structure?
+Data Structure take care of data storage and ways to store data so that we can access it quickly.
+Example:
+```javascript
+var a=1;
+//1 takes 4Bytes and is represented by 32Bits.
 
+Math.pow(5,1000)
+//Infinity
+//As the number becomes too longer to store inour Ram JavaScript makes it Infinity.
+
+```
+
+Our Goal is to minimize the Operation that we need to do For CPU to get information and to write information.Thats why Data Structure is so Powerfull.
+
+##### Data Structure in Different Langusges.
+All  the Languages has datatypes like in js we have
+1. Number = 1
+2. Boolean = True
+3. Undefine
+4. String='A'
+ALl Languages has Data Structures to Organize there Data Types Eg in js we have Array and Object.
+
+```javascript
+[] //Array
+{} //Objects 
+```
+It allows us to Organize our Primitive DataTypes and Complex like.Array of Objects.
+
+```javascript
+let arrOfObj=[{},{},{}];
+```
+Some Languages has PreBuilt DataStructures Or We can Built These Datastructures.
+
+Every DS has its own use some are good at one Operation or Other are good at different Operation.
+
+#### Uses of DS?
+1. Insertion
+2. Deletion
+3. Traversal (access Every Data at once)
+4. Searching
+5. Sorting
+6. Access
 
 
 
