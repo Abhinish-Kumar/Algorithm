@@ -1211,6 +1211,8 @@ The advantage of dynamic arrays is that they are flexible and can accommodate an
 2. Context
 3. Instatiation
 
+
+#### 1.Reference Type
 ```javascript
 //Object is a reference type and array is also an object in javascript
 
@@ -1239,13 +1241,60 @@ object1===object3;//true (Both have different box or container)
    
    var object3={value:1};//a new box object3 is also created which is a different box and we dont know what is in this thats why if we compare two objet with same values and properties it return false because we compare different boxes.
    ```
+```javascript
+[]===[];//arrays are also object (false)
+```
 
 
+### 1.Context (context vs scope)
 
+a new function creates a new scope 
 
+```javascript
+function(){
+//outer scope does not know what is inside this function
+//the scope of the variables inside this function is private.
+}
+```
+And context tells us about where we are in the object.
 
+```javascript
+console.log(this);//window
+//means we are currently in window object
 
+//check
+console.log(this===window);//true
 
+this.alert("hwllo");//window object is changed by this
+```
+
+"this" means is what is the object environment that we are in right now.
+And this represent what is left to the dot 
+
+```javascript
+window.alert()
+this.alert()
+//both are same 
+```
+
+Why "this" is important.
+
+```javascript
+function a(){
+console.log(this);
+}
+a();//window
+window.a();//window
+//note window is attached automatically
+```
+```javascript
+const object4={
+a:function(){
+console.log(this);
+}}
+object.a();//object4{}
+//because we are currently in object4
+```
 
 
 
