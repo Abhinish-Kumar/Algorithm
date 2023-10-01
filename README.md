@@ -1358,5 +1358,7 @@ So here we link both the classes and combines the properties to run any function
 
 Here super() runs the constructor functon of Player for us.
 
+ "New" keyword make an instance of Wizard  and Wizard uses some functionality from Player and also add theri own property.
+
 
 
