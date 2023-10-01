@@ -1297,14 +1297,66 @@ object.a();//object4{}
 ```
 
 
+### 3. Instantiation
+
+Means when you make a copy of an object and reuse the code.
+If you want to create a game having so many players you have to create a object alot more time.To solve that you can do Instantiation.You have to make instance.
+
+##### class
+
+```javascript
+
+class Player{
+    constructor(name,type){ //constructur function
+        this.name=name;
+        this.type=type;
+    }
+    introduce(){
+        console.log(`Hi, I am ${this.name} ,I am a ${this.type}`);
+    }
+}
+
+let name=new Player("abhi","btech");
+let name1=name.introduce();
+console.log(name1)
 
 
+//Hi, I am abhi ,I am a btech
+```
 
 
+```javascript
+class Player{
+    constructor(name,type){
+        this.name=name;
+        this.type=type;
+    }
+    introduce(){
+        console.log(`Hi, I am ${this.name} ,I am a ${this.type}`);
+    }
+}
+
+class wizard extends Player{
+    constructor(name,type){
+        super(name,type);
+        
+    };
+        
+        play(){
+            console.log(`Weeeeeeeeeee iam ${this.type}`);
+        }
+}
+
+const wizard1=new wizard("abhinish","cse");
+
+console.log(wizard1.introduce());
+//Hi, I am abhinish ,I am a cse
+
+```
+So here we link both the classes and combines the properties to run any function from any of the class with new paramerets.And its not mandatory to create a new thing,we can only use the previous fram with new parameter.
 
 
-
-
+Here super() runs the constructor functon of Player for us.
 
 
 
