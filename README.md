@@ -1117,15 +1117,55 @@ Every DS has its own use some are good at one Operation or Other are good at dif
 
 <img src="array1.png" width="500px" />
 
+  ```javascript
+const strings=['a','b','c','d'];
+
+//Computer store strings for me
+
+//One element take 32Bits and 4 selfs(having 8bits in one self)
+// 4 elements * 4 selfs = 16 bytes
+// Each item like a take 4selfs
+// Finally we are clear that to store 4 array elements we need 16Bytes of storage.
+
+```
   
-  
+****************************
+
+```javascript
+string[2] //'c'
+//It grabs elements from memory for me
+//here we tell the computer to grab the item which is stored in the array of memory address (2).
+```
+
+##### Push() (adding element at last)
+
+```javascript
+string.push('e') //O(1)
+//Becasue it only adds the new element at last without disturbing any other array element
+```
+
+##### Pop() (remove element from last)
+
+```javascript
+string.pop(); //O(1)
+//Same as push() it also do a single task for any type of array.
+```
 
 
+##### unShift() (add element at first)
 
+```javascript
+string.unshift('x') //O(n)
+```
+Its BIG O is n because when we try to add element at first while using unshift .We first have to move  the array element by one index at right so that we get the space for our first element.Becasue of doing work for every element in the array the BIG O is O(n).May be array is not good to add the element at very beginning of the array.
 
+##### splice(start,delete,"new element") (add element to center)
 
+```javascript
+string.splice(2,0,"alien");//O(n/2)  or O(n)
+```
 
-
+When we try to add an element at center we have to move half of the array element to right Thats why the BIG O to add element at center of the array is O(n/2).
 
 
 
