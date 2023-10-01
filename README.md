@@ -1205,7 +1205,40 @@ Each cell represents a memory location that can store an integer value. The arra
 The advantage of dynamic arrays is that they are flexible and can accommodate any number of elements. The disadvantage is that they are slower and more complex to use. They also require extra memory for storing the size and capacity of the array, and they may cause memory fragmentation when reallocating memory blocks. 
 
 
+## Optional Classes in js
 
+1. Referencce Type
+2. Context
+3. Instatiation
+
+```javascript
+//Object is a reference type and array is also an object in javascript
+
+//1.
+[]===[];//false
+[1]===[1];//false
+
+//2.
+var object1={value:10};
+var object2=object1;
+var object3={value:10};
+
+object1===object2;//true
+object1===object3;//true (Both have different box or container)
+
+
+```
+1. true,"hello",null,undefined all are defined by programming language.
+2. These types are called as primitive type.
+3. And [],{} are reference type or non-primitive type.
+4. Non-primitive types are not created by the programming languages.They are created by programmers.
+
+   ```javascript
+   var object1={value:1}; //a new box or container is created 
+   var object2=object1;   //we only give the reference of the same box object1 and not created a new box thats why it returns true while we compare it.
+   
+   var object3={value:1};//a new box object3 is also created which is a different box and we dont know what is in this thats why if we compare two objet with same values and properties it return false because we compare different boxes.
+   ```
 
 
 
