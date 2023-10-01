@@ -1168,7 +1168,41 @@ string.splice(2,0,"alien");//O(n/2)  or O(n)
 When we try to add an element at center we have to move half of the array element to right Thats why the BIG O to add element at center of the array is O(n/2).
 
 
+## Static vs Dynamic array
 
+Static means fix in size.like create an array of 7 elements,It books only seven memory to avoid the addition of extra elements.
+Ans dynamic array allows its size to increase and decrease.
+
+```cpp
+//in c++ arrays are static
+int a[20];
+int b[5]{1,2,3,4,5};
+//Array having space of 5 elements
+```
+
+##### you are thinking that dynamic arrays are good because we not need to worry about size of the array.(But its bad for managing memory)
+
+when we add any element at last of the array our computer or system moves full array to different memory location with the new element added at last so for constant time its BIG O is O(1) and for linear time its BIG O is O(n).
+
+###### Static Array
+
+A static array is an array that has a fixed size and is allocated at compile time. It stores elements in contiguous memory locations, so they can be accessed very efficiently using indices. For example, if we declare a static array of 10 integers in Java, it will look something like this in memory:
+
+0	1	2	3	4	5	6	7	8	9
+
+Each cell represents a memory location that can store an integer value. The array has a fixed size of 10, so it cannot grow or shrink at run time. The array also has a name, which is a reference to the first element of the array. For example, if we name the array foo, then foo will point to the memory location of the element at index 0. We can access any element of the array by using the name and the index, such as foo[0], foo[1], etc.
+
+The advantage of static arrays is that they are fast and simple to use. The disadvantage is that they are inflexible and may waste memory if the size is not known in advance or if the array is not fully utilized. 
+
+
+###### Dynamic array
+
+A dynamic array is an array that has a variable size and is allocated at run time. It stores elements in contiguous memory locations, but it can grow or shrink as needed by allocating a new memory block and copying the elements from the old block to the new one. For example, if we declare a dynamic array of 10 integers in C, it will look something like this in memory:
+
+0	1	2	3	4	5	6	7	8	9
+Each cell represents a memory location that can store an integer value. The array has an initial size of 10, but it can change at run time. The array also has a name, which is a pointer to the first element of the array. For example, if we name the array ptr, then ptr will point to the memory location of the element at index 0. We can access any element of the array by using the name and the index, such as ptr[0], ptr[1], etc.
+
+The advantage of dynamic arrays is that they are flexible and can accommodate any number of elements. The disadvantage is that they are slower and more complex to use. They also require extra memory for storing the size and capacity of the array, and they may cause memory fragmentation when reallocating memory blocks. 
 
 
 
