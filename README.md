@@ -1108,9 +1108,14 @@ Every DS has its own use some are good at one Operation or Other are good at dif
 6. Access
 
 
+# 1. Array (First Data Structure)
+1. It organizes the data sequentially.
+2. It is most asked because it has a least amount of rules.
+3. It store data in contiguous memory location.
+4. If you want to go all the elements one by one arrays are the best choice.
 
 
-
+<img src="array1.png" width="500px" />
 
   
   
