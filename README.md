@@ -1370,6 +1370,7 @@ Data structurs are simply thigs that we can build from scratch.
 
 Arrays in js are just objects with integer based keys that act like indexes.
 
+### 1.create a class that defines an array and its methods'
 ```javascript
 //1 create a class that defines an array and its methods'
 class MyArray{
@@ -1394,6 +1395,7 @@ console.log(newArray.get(0)) //undefined
 
 ```
 
+### 2. create push method to insert element on array
 ```javascript
 //2 create push method to insert element on array
 class MyArray{
@@ -1424,7 +1426,7 @@ console.log(newArray);
 //MyArray { length: 1, data: { '0': 'hello' } }
 ```
 
-
+### 3. Create pop method to delete an element from last.
 ```javascript
 //3. Create pop method to delete an element from last.
 class MyArray{
@@ -1470,9 +1472,9 @@ console.log(newArray.pop())//hello
 
 ```
 
-
+### 4. Create a method to delete an element with its index number
 ```javascript
-//3. Create a method to delete an element with its index number
+//4. Create a method to delete an element with its index number
 
 class MyArray{
           constructor(){
@@ -1525,7 +1527,8 @@ console.log(newArray)
   data: { '0': 'hello', '1': 'kumar', '2': 'i am abhi', '3': 'i am abhi' }*/
 ```
 
-delete last item of the array 
+### 5. delete last item of the array 
+
 
 ```javascript
 class MyArray{
