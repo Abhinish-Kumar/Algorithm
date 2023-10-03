@@ -1361,4 +1361,223 @@ Here super() runs the constructor functon of Player for us.
  "New" keyword make an instance of Wizard  and Wizard uses some functionality from Player and also add theri own property.
 
 
+# Create an array from scratch.
+
+1. How to build an array.
+2. How to use it.
+
+Data structurs are simply thigs that we can build from scratch.
+
+Arrays in js are just objects with integer based keys that act like indexes.
+
+```javascript
+//1 create a class that defines an array and its methods'
+class MyArray{
+          constructor(){
+                    this.length=0;
+                    this.data={}
+          }
+
+          get(index){
+                    return this.data[index]
+          }
+}
+
+
+const newArray=new MyArray();
+
+console.log(newArray)  //MyArray { length: 0, data: {} }
+
+
+console.log(newArray.get(0)) //undefined
+
+
+```
+
+```javascript
+//2 create push method to insert element on array
+class MyArray{
+          constructor(){
+                    this.length=0;
+                    this.data={}
+          }
+
+          get(index){
+                    return this.data[index]
+          }
+
+          push(item){
+                    this.data[this.length]=item;
+                    this.length++;
+                    return this.length
+          }
+}
+
+const newArray=new MyArray();
+
+console.log(newArray)//MyArray { length: 0, data: {} }
+console.log(newArray.get(0))//undefined
+
+newArray.push("hello")
+console.log(newArray);
+
+//MyArray { length: 1, data: { '0': 'hello' } }
+```
+
+
+```javascript
+//3. Create pop method to delete an element from last.
+class MyArray{
+          constructor(){
+                    this.length=0;
+                    this.data={}
+          }
+
+          get(index){
+                    return this.data[index]
+          }
+
+          push(item){
+                    this.data[this.length]=item;
+                    this.length++;
+                    return this.length
+          }
+          
+          pop(){
+              const lastItem=this.data[this.length-1];
+              delete this.data[this.length-1];
+            //delete lastItem;
+            //error
+            //delete works on object not with variable
+              this.length--;
+              
+              return lastItem;
+          }
+}
+
+
+const newArray=new MyArray();
+
+newArray.push("hello")
+newArray.push("man")
+console.log(newArray);//MyArray { length: 2, data: { '0': 'hello', '1': 'man' } }
+
+
+newArray.pop();
+console.log(newArray);//MyArray { length: 1, data: { '0': 'hello' } }
+
+console.log(newArray.pop())//hello
+
+```
+
+
+```javascript
+//3. Create a method to delete an element with its index number
+
+class MyArray{
+          constructor(){
+                    this.length=0;
+                    this.data={}
+          }
+
+          get(index){
+                    return this.data[index]
+          }
+
+          push(item){
+                    this.data[this.length]=item;
+                    this.length++;
+                    return this.length
+          }
+          
+          deletee(index){
+              const item=this.data[index];//element of given index
+              this.shiftItems(index);
+          }
+          shiftItems(index){
+              for(let i=index;i<this.length-1;i++){
+                  this.data[i]=this.data[i+1];
+                 
+              }
+               this.length--;
+          }
+}
+
+
+const newArray=new MyArray();
+
+newArray.push("hello")
+newArray.push("man")
+newArray.push("kumar")
+newArray.push("i am abhi")
+console.log(newArray);
+/*MyArray {
+  length: 4,
+  data: { '0': 'hello', '1': 'man', '2': 'kumar', '3': 'i am abhi' }
+}
+}*/
+
+
+newArray.deletee(1);
+console.log(newArray)
+/*MyArray {
+  length: 3,
+  data: { '0': 'hello', '1': 'kumar', '2': 'i am abhi', '3': 'i am abhi' }*/
+```
+
+delete last item of the array 
+
+```javascript
+class MyArray{
+          constructor(){
+                    this.length=0;
+                    this.data={}
+          }
+
+          get(index){
+                    return this.data[index]
+          }
+
+          push(item){
+                    this.data[this.length]=item;
+                    this.length++;
+                    return this.length
+          }
+          
+          deletee(index){
+              const item=this.data[index];//element of given index
+              this.shiftItems(index);
+          }
+          shiftItems(index){
+              for(let i=index;i<this.length-1;i++){
+                  this.data[i]=this.data[i+1];
+                 
+              }
+              delete this.data[this.length-1];
+               this.length--;
+          }
+}
+
+
+const newArray=new MyArray();
+
+newArray.push("hello")
+newArray.push("man")
+newArray.push("kumar")
+newArray.push("i am abhi")
+console.log(newArray);
+
+/*MyArray {
+  length: 4,
+  data: { '0': 'hello', '1': 'man', '2': 'kumar', '3': 'i am abhi' }
+}
+}*/
+
+
+newArray.deletee(1);
+console.log(newArray)
+/*MyArray {
+  length: 3,
+  data: { '0': 'hello', '1': 'kumar', '2': 'i am abhi'}*/
+```
 
