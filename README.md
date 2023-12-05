@@ -1584,3 +1584,123 @@ console.log(newArray)
   data: { '0': 'hello', '1': 'kumar', '2': 'i am abhi'}*/
 ```
 
+# Recursion
+#### What is recursion
+Recursion is a process in which function calls itself directly or indirectly.
+
+```javascript
+
+function sub(){
+sub();
+}
+
+```
+
+#### Program to demonstrate recursion.
+
+```javascript
+
+ let a = 10;
+      function aa(a) {
+        if (a == 1) {
+          return console.log("Done with recursion");
+        } else {
+          console.log(a);
+          aa(a - 1);
+        }
+      }
+      aa(a);
+
+```
+
+Output :- 10
+recursion.html:15 9
+recursion.html:15 8
+recursion.html:15 7
+recursion.html:15 6
+recursion.html:15 5
+recursion.html:15 4
+recursion.html:15 3
+recursion.html:15 2
+recursion.html:13 Done with recursion
+
+#### How to write a recursive program?
+
+1. Divide the problem in to smaller sub-problems.
+2. specify the base condition to stop the recursion.
+
+##### Q).Calculate the factorial of a number?
+
+Factorial: 5 => 5*4*3*2*1 = 120
+
+#### Base structure of a recursive program.
+
+```javascript
+
+fact()
+{
+if(){
+
+....//Base case (2nd step)
+
+
+}else{
+
+
+....//Recursive Procedure(3rd step)
+
+
+}
+
+}
+
+```
+
+1. Step :- Divide the problem in to smaller sub-problems.
+
+```javascript
+calculate fact(4);
+
+fact(1) = 1;
+fact(2) = 2*1 = 2*fact(1);
+fact(3) = 3*2*1 = 3*fact(2);
+fact(4) = 4*3*2*1 = 4*fact(3);
+
+//General formula for factorial
+
+fact(n) = n*fact(n-1);
+
+```
+
+2. Step:- specify the base condition to stop the recursion.
+
+Base Case is the one which doesnt require to call the same function agalin and it helps in stoping the recursion.
+
+
+```javascript
+  function fact(n) {
+        if (n == 1) {
+          return 1;
+        } else {
+          return n * fact(n - 1);
+        }
+      }
+      console.log(fact(5));
+//Output 120
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
