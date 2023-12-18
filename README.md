@@ -1691,11 +1691,36 @@ Base Case is the one which doesnt require to call the same function agalin and i
 ```
 
 
+# Tree 
 
+<img src="https://image.shutterstock.com/image-vector/illustration-set-trees-260nw-225625717.jpg" width="100%" >
 
+Trees are a data structure that have a hierarchical model. They can have two or more child nodes. It starts from a ROOT node, and every child in tree is distant from the root node. Every child is a descendant of only one parent. In tree, we have a parent-child relationship. It is unidirectional. We also have leaf nodes that are the very end part of the tree. A tree also has subtrees. 
 
+or 
 
+A tree data structure is a way of organizing data in a hierarchical manner. It consists of nodes that are connected by edges, forming a parent-child relationship. The topmost node is called the root, and the nodes that have no children are called leaves. A tree can have different types and properties, depending on how the nodes and edges are arranged. Some common types of trees are binary trees, binary search trees, AVL trees, and B-trees.
 
+In real life example, if we see a DOM in our console, it is also a tree data structure. Here, the head and the body are the children of the html tag. And inside the body, we have the child of the body tag. All the elements are connected hierarchically.
+
+```html
+
+<html>
+
+<head></head>
+
+<body></body>
+
+</html>
+
+```
+
+A chess game use tree data structure to make a decision. For what play I have what type of action.
+It is also similar to the linked list that every element in the tree is a node and every node can store the data.
+
+Liked list is technically a type of tree with just a one single path and its linear and there is only one way to go from top to bottom.
+
+In tree all the nodes can point to the child only.There is only one entry point. Just like real world tree we have hundreds of tree data structures. Every tree has their own usecase.
 
 
 
