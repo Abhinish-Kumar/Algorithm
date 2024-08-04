@@ -42,7 +42,7 @@ for (initialization; condition; increment) {
 for loop takes 3 parameter 
 
 
-```c
+```javascript
 
 for (int i=1; i<=5; i++) {
    printf("Hello Dodo\n");
@@ -57,18 +57,19 @@ for (int i=1; i<=5; i++) {
 //Hello Dodo
 
 ```
-```c
+```javascript
 
-for (int i=1; i<=4; i++) {
-   printf("Hello Dodo\n");
+for (let i = 1; i <= 4; i++) {
+   console.log("Hello Dodo");
 }
 
+// Output:
+// Hello Dodo
+// Hello Dodo
+// Hello Dodo
+// Hello Dodo
+// Hello Dodo
 
-//Output
-//Hello Dodo
-//Hello Dodo
-//Hello Dodo
-//Hello Dodo
 
 ```
 
@@ -108,9 +109,10 @@ Iteration Details
 
 ```c
 
-for (int i = 1; i <= 5; i++) {
-    printf("Hello Dodo\n");
+for (let i = 1; i <= 5; i++) {
+   console.log("Hello Dodo");
 }
+
 
 ```
 
@@ -129,26 +131,124 @@ Note:- initialization of value occurs only once
 
 ## Q Print hello world "n" times . Takes as input from user
 
+```javascript
+
+let n = prompt("Enter the number of times to print Hello World:");
+n = parseInt(n);  // Convert input to an integer
+
+for (let i = 1; i <= n; i++) {
+    console.log("Hello World");
+}
+
+```
+
+1. Step 1 :- Check condition
+2. Step 2 :- Go inside loop
+3. Step 3 :- Updation (eg: i=i+2)
 
 
+Note :- 0 --- i<10 ==== 10 times run loop
+Note :- 1 --- i<=10 ==== 10 times run loop
 
 
+```javascript
+for (let i = 1; i <= 10; i=i+3) {
+    console.log("Hello World");
+}
 
 
+//Hello World
+//Hello World
+//Hello World
+//Hello World
+
+```
 
 
+# Scope in loops
+
+the scope refers to the context in which variables are accessible. There are two main types of scope:
+
+1. Global Scope: Variables declared outside any function or block are in the global scope and can be accessed from anywhere in the code.
+2. Local Scope: Variables declared within a function or block are in the local scope and can only be accessed within that function or block.
+
+```javascript
+  for (let k = 0; k < 10; k++) {
+        // Block Scope 
+        const loopConst = "I'm a loop variable ";
+        console.log(loopConst); // Accessible within the loop
+    }
+console.log(k) //undefine
+```
+```javascript
+let k;
+  for ( k = 0; k < 10; k++) {
+        // Block Scope 
+        const loopConst = "I'm a loop variable";
+        console.log(loopConst); // Accessible within the loop
+    }
+console.log(k) //10
+```
 
 
+# Print numbers from 1 to 100
+
+```javascript
+
+  for (let k = 1; k <=100; k++) {
+        console.log(k); // Accessible within the loop
+    }
+
+```
 
 
+# Print all teh even numbers from 1 to 100
+
+```javascript
+
+  for (let k = 1; k <=100; k++) {
+        if(k%2===0)
+        console.log(k); 
+ }
+
+// 2 4 6
+```
+go from 1 to 100 , when our if condition satisfy print the number 
+
+or 
+
+```javascript
+
+  for (let k = 2; k <=100; k=k+2) {
+        console.log(k); 
+ }
+
+// 2 4 6 -- 100
+```
+
+Same code but more optimized because loop will run only 50 times , also without if statement.
 
 
+# Print all the odd numbers from 1 to 100
+
+```javascript
+  for (let k = 1; k <=100; k=k+2) {
+        console.log(k); 
+ }
+
+// 1 3 5 --- 99
+```
 
 
+# Print the table of 19
+
+```javascript
+  for (let k = 1; k <=10; k++) {
+        console.log(k*19);
+ }
 
 
-
-
+```
 
 
 
