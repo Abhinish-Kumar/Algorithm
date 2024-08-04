@@ -121,6 +121,32 @@ for (int i = 1; i <= 5; i++) {
 5. Iteration 5: i = 5, prints "Hello Dodo"
 
 
+Note:- initialization of value occurs only once
+
+
+1 to 5 = 5 time
+
+
+## Q Print hello world "n" times . Takes as input from user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
