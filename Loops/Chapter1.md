@@ -247,8 +247,66 @@ Same code but more optimized because loop will run only 50 times , also without 
         console.log(k*19);
  }
 
+```
+If you can print table of 1 then just multiply with that number like 19.
+
+
+```javascript
+  for (let k = 19; k <=190; k=k+19) {
+        console.log(k);
+ }
 
 ```
+
+Every time increse the number with 19 till end. There are so many ways to do the same thing in programming , but you should use the algorithm with less lines of code and algorithm that takes less time to give output. 
+
+
+# Print the table of "n". Here "n" is a integer which user will input. 
+
+```javascript
+let n=prompt("Enter number");
+let table=parseInt(n);
+  for (let k = 1; k <=10; k++) {
+        console.log(k*table);
+ }
+
+```
+
+# Display this AP - 1,3,5,7,9... upto "n" terms.
+
+AP:- Arithmetic progression.(sequence)
+Here difference is 2 
+These are odd numbers 
+What will be the nth term.
+
+== 2n-1 (nth term)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
