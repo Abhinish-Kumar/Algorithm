@@ -281,12 +281,35 @@ What will be the nth term.
 
 == 2n-1 (nth term)
 
+Note: - learn about arithmetic progression.
 
+```javascript
 
+//print n tern in this series
+// 1,3,5,7,9.. n
+let n=10;
+for(let i=1;i<=2*n-1;i=i+2){
+console.log(i);
+}
 
+//1 3 5 7 9 11 13 15 17 19
 
+```
+ 
+# Q) Display this AP - 4,7,10,13,16... upto 'n' terms
 
+```javascript
 
+//print n term in this series
+// 4,7,10,13,16..
+let n=10;
+for(let i=1;i<=2*n-1;i=i+2){
+console.log(i);
+}
+
+//1 3 5 7 9 11 13 15 17 19
+
+```
 
 
 
