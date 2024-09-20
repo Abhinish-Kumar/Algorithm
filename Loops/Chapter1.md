@@ -303,13 +303,152 @@ console.log(i);
 //print n term in this series
 // 4,7,10,13,16..
 let n=10;
-for(let i=1;i<=2*n-1;i=i+2){
+for(let i=4;i<=3*n+1;i=i+3){
 console.log(i);
 }
 
 //1 3 5 7 9 11 13 15 17 19
 
 ```
+
+without math
+
+
+```javascript
+
+//print n term in this series
+// 4,7,10,13,16..
+let n=10;// 10 time loop will run
+//take extra variables
+let a=4; //start from
+for(let i=1;i<=n;i++){ //do not disturb this 
+console.log(a);
+a=a+3; //add 3 every time 
+}
+
+//1 3 5 7 9 11 13 15 17 19
+
+```
+
+# Q) Display this GP - 1,2,4,8,16,32,...upto 'n' terms
+
+Geometric progression
+
+run the loop n time and just update the block of loop.
+
+```javascript
+let n=10;
+let a=1;
+for(let i=1;i<=n;i++){
+console.log(a);
+a=a*2;
+}
+
+//1
+// 2
+ //4
+ //8
+ //16
+ //32
+ //64
+ //128
+ //256
+ //512
+//1024
+```
+
+
+# Q) Display this GP - 3,12,48 upto "n" terms.
+
+```javascript
+let n=10;
+let a=3;
+for(let i=1;i<=n;i++){
+console.log(a);
+a=a*4;
+}
+
+//3
+ //12
+ //48
+// 192
+// 768
+// 3072
+// 12288
+ //49152
+ //196608
+ //786432
+//3145728
+```
+
+# Q) Display this AP - 100,97,94,... upto all terms which are positive.
+
+```javascript
+let l=100;
+for(let i=l;i>0;i=i-3){
+console.log(i);
+}
+
+//100
+//97
+//94
+//91
+//88
+//....
+//1
+```
+This is simple because we know the nth term
+
+an=100+(n-1)(-3)
+=100-3n+3
+=103-3n
+n<103/3
+n<34 times run loop
+
+
+
+# Q) Display this GP - 100,50,25,..upto "n" terms
+
+
+```javascript
+let n=10;
+let a=100
+for(let i=0;i<n;i++){
+console.log(a);
+a=a/2;
+}
+
+//100
+ 50
+ 25
+ 12.5
+ 6.25
+ 3.125
+ 1.5625
+ 0.78125
+ 0.390625
+ 0.1953125
+0.09765625
+```
+
+Note: - Loop ke andar jo bhi dalo vo sab repeat hota hi.
+
+```javascript
+for(){
+line 1
+line 2
+line 3
+}
+
+all the line will be repeated every time
+
+```
+
+
+
+
+
+
 
 
 
