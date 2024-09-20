@@ -96,15 +96,110 @@ console.log(i);
 - Note: address of first array element is the address of whole array.
 
 
+# Q 3) Calculate the sum,product of all the elements in the given array.
+1. Sum
+2. Product
+3. Max
+4. Min
+
+
+# Q 4) Given an array of integers, change the value of all odd indexed elements to its second multiple and increment all even indexed value by 10.
+
+odd  2,4,6
+
+```javascript
+let arr=[1,2,3,4,5,6];
+for(let i=0;i<arr.length;i++){
+if(arr[i]%2===0){
+arr[i]=arr[i]*2;
+}else{
+arr[i]=arr[i]+10;;
+}
+}
+console.log(arr);
+// [11, 4, 13, 8, 15, 12]
+```
+
+# Q 5) Count the number of elements in given array greater than a given number x.
+
+```javascript
+let arr=[1,2,3,4,5,6];
+let x=4;
+let count=0;
+for(let i=0;i<arr.length;i++){
+if(arr[i]>x){
+count++;
+}
+}
+console.log(count);
+
+```
+
+# Q 6) Find the difference between the sum of elements at even indices to the sum of elements at odd indices.
+
+
+```javascript
+let arr=[1,2,3,4,5,6,7];
+let even=0;
+let odd=0;
+for(let i=0;i<arr.length;i++){
+if(arr[i]%2===0){
+//odd
+even+=arr[i]
+}else{
+//even
+odd+=arr[i]
+}
+}
+console.log(even-odd);
+//4
+```
+
+# Q 7) Find the total number of pairs in the Array whose sum is equal to the given value x.
+
+
+```javascript
+let arr=[1,2,3,4,5,6,7,8];
+let target=12;
+let count=0;
+for(let i=0;i<arr.length;i++){
+for(let j=i;j<arr.length;j++){
+if(arr[i]+arr[j]===target && i!==j){
+count++;
+console.log(arr[i],arr[j])
+}
+}
+}
+console.log(count);
+
+```
+
+# Q 8) Find the second largest element in the given array.
+
+```javascript
+let arr=[1,2,3,4,5,6,7,8];
+let firstMax=-1;
+let secondMax=-1;
+for(let i=0;i<arr.length;i++){
+if(firstMax<arr[i]){
+firstMax=arr[i]
+}
+}
+
+for(let i=0;i<arr.length;i++){
+if(secondMax<arr[i] && firstMax!==arr[i]){
+secondMax=arr[i]
+}
+}
 
 
 
+console.log(secondMax);
 
+```
+With one loop.
 
-
-
-
-
+2.24
 
 
 
