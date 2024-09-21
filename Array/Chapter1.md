@@ -199,17 +199,102 @@ console.log(secondMax);
 ```
 With one loop.
 
-2.24
+```javascript
+let arr=[1,2,3,4,5,6,7,8,9];
+let firstMax=-1;
+let secondMax=-1;
+for(let i=0;i<arr.length;i++){
+if(firstMax<arr[i]){
+secondMax=firstMax;
+firstMax=arr[i];
+}
+}
+
+
+console.log(secondMax);
+//work only with increasing order
+
+```
+
+Problem with this array
+
+```javascript
+let arr=[5,4,3,2,1];
+let firstMax=-1;
+let secondMax=-1;
+for(let i=0;i<arr.length;i++){
+if(firstMax<arr[i]){
+secondMax=firstMax;
+firstMax=arr[i];
+}
+}
+
+
+console.log(secondMax);
+//second max is -1 because of only one if condition
+
+```
 
 
 
+```javascript
+let arr=[5,4,3,2,1];
+let firstMax=-1;
+let secondMax=-1;
+for(let i=0;i<arr.length;i++){
+if(firstMax<arr[i]){
+secondMax=firstMax;
+firstMax=arr[i];
+}else if(secondMax<arr[i]){  //max > arr[i]
+//koi problem nahi hi ki ham smax ko array ki chhoti value de rahe hi
+secondMax=arr[i];
+}
+}
 
 
+console.log(secondMax); //4
+
+```
+
+problem if two greater vales are there then it will return ma as second max
+
+```javascript
+let arr=[5,5,4,4,3,2,1];
+let firstMax=-1;
+let secondMax=-1;
+for(let i=0;i<arr.length;i++){
+if(firstMax<arr[i]){
+secondMax=firstMax;
+firstMax=arr[i];
+}else if(secondMax<arr[i]){  //max > arr[i]
+//koi problem nahi hi ki ham smax ko array ki chhoti value de rahe hi
+secondMax=arr[i];
+}
+}
 
 
+console.log(secondMax); //5
+```
+
+solution
+
+```javascript
+let arr=[5,5,4,4,3,2,1];
+let firstMax=-1;
+let secondMax=-1;
+for(let i=0;i<arr.length;i++){
+if(firstMax<arr[i]){
+secondMax=firstMax;
+firstMax=arr[i];
+}else if(secondMax<arr[i] && firstMax!=arr[i]){  //max > arr[i]
+//koi problem nahi hi ki ham smax ko array ki chhoti value de rahe hi
+secondMax=arr[i];
+}
+}
 
 
-
+console.log(secondMax); //5
+```
 
 
 
