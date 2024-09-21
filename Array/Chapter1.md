@@ -296,6 +296,136 @@ secondMax=arr[i];
 console.log(secondMax); //5
 ```
 
+# Q 9) Write a program to copy the contents of one array into another in the reverse order.
+
+You just have to copy and pase the elements index wise in reverse order.
+
+```javasccript
+let arr=[1,2,3,4,5];
+let copirdArray = [];
+
+for(let i=0;i<arr.length;i++){
+copirdArray[arr.length-i-1]=arr[i]
+}
+console.log(copirdArray);
+```
+
+# Q 10) Write a program to reverse the array without using extra array.
+
+
+
+```javasccript
+let arr=[1,2,3,4,5];
+
+for(let i=0;i<arr.length/2;i++){
+[arr[arr.length-i-1],arr[i]]=[arr[i],arr[arr.length-i-1]]
+}
+console.log(arr);
+```
+
+# Q 11) If an array arr contains n elements , then check if the  given array is a palindrome or not.
+
+
+Palindrom :- 12321 same from both the side
+
+```javasccript
+let arr=[1,2,3,2,1];
+
+let palindrom =true ;
+for(let i=0;i<arr.length/2;i++){
+if(arr[arr.length-i-1]!=arr[i]){
+palindrom=false;
+break;
+}
+}
+console.log(palindrom);
+```
+
+# Q 12) Rotate the given array "a" by k steps, where k is non-negative.
+
+Note:- k can be greater than n as well where n is the size of array "a"
+
+
+Note:- remove last element and add it to the first.
+
+
+```javasccript
+let arr=[1,2,3,4,5];
+let k=2;
+for(let i=0;i<k;i++){
+let last=arr.pop();
+arr.unshift(last)
+}
+console.log(arr); //[4, 5, 1, 2, 3]
+```
+
+if k is larger then array size `k=k%sizeofarray` because by traversing array at the size it reaches at the strting point so why to traverse.
+
+```javascript
+
+let arr=[1,2,3,4,5];
+let k=2;
+for(let i=0;i<k%arr.length;i++){
+let last=arr.pop();
+arr.unshift(last)
+}
+console.log(arr); //[4, 5, 1, 2, 3]
+
+```
+
+Do this without array methods.
+
+
+3:18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
