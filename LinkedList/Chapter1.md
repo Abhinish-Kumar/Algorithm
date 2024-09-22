@@ -58,9 +58,78 @@ Output :-
 
 
 
+## Does linked list overcomes the limilations of arrays?
+
+1. First advantage is that nodes occupy the random address. but array occupy the continuous address. 
+2. Drawback is that it does not store the address of integer , it store the address of node, which takes two values insted of one , first one is int and second one is the memory address of next node of type Node. Thats why linkedlist node occupy more memory then array.
+3. Another disadvantages of the linked list is that , unlike array that takes O(i) to get a element from array with index, linked list has no index, that why for getting the value or for traversal we have to traverse the whole linked list until we found the correct node.
+4. Traversal is same for both array and linked list , but insertion of a new node , takes more time in array to shift the other elements. But in linked list we just have to create a new node , and traverse the linked list until we find the correct position to inset out new created node then we just have to change the link.
+5. All the mechanish of the linked list is based on the chnaging the link and creating the link. think it as a long chain of bangles.
 
 
+## Types of Linked List
 
+1. Singly :- Node contain two values , data and next nodes ref.
+2. Doubly :- Node is big , that store the address of next and previous node. (limiation of singly linked list is that it can not move in reverse order)
+3. Circular :- A linked list without tail , because the end is connected to the starting point.
+
+
+# Singly linked list.
+
+## 1. Display a linked list
+
+If we have only head given then , print the linked list till tail. 
+
+```javascript
+class Node{
+constructor(data){
+this.data=data; //node store data
+this.next=null; //and address of next node
+}
+}
+
+//create node with data
+let a=new Node("A");
+let b=new Node("B");
+let c=new Node("C");
+
+//link created nodes
+a.next=b;
+b.next=c;
+
+console.log(a.data)   //A
+console.log(a.next.data) //B
+console.log(a.next.next.data)  //C
+
+```
+
+with loop
+
+```javascript
+class Node{
+constructor(data){
+this.data=data; //node store data
+this.next=null; //and address of next node
+}
+}
+
+//create node with data
+let a=new Node("A");
+let b=new Node("B");
+let c=new Node("C");
+
+//link created nodes
+a.next=b;
+b.next=c;
+
+let temp=a;
+while(temp){
+console.log(temp.data);
+temp=temp.next;
+}
+
+```
+We are taking here a new temporary pointer that is pointing to the first element of linked list , then we pass the temp variable the address of a next node , because we know that next contain the address of next node. and temp is now b.
 
 
 
