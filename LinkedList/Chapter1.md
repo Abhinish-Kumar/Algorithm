@@ -125,11 +125,167 @@ b.next=c;
 let temp=a;
 while(temp){
 console.log(temp.data);
-temp=temp.next;
+temp=temp.next; //its like a++
 }
 
 ```
 We are taking here a new temporary pointer that is pointing to the first element of linked list , then we pass the temp variable the address of a next node , because we know that next contain the address of next node. and temp is now b.
+
+
+Note:- Now we are able to display any type of singly linked list.
+
+
+## Dispay Linked List with (Recursion)
+
+
+```javascript
+class Node{
+constructor(data){
+this.data=data; //node store data
+this.next=null; //and address of next node
+}
+}
+
+//create node with data
+let a=new Node("A");
+let b=new Node("B");
+let c=new Node("C");
+
+//link created nodes
+a.next=b;
+b.next=c;
+
+
+function display(head){
+if(head){
+console.log(head.data)
+display(head.next)
+}
+}
+
+
+display(a)
+//a b c
+
+```
+
+Note:- why we are creating the new temp variable. Because `a.next` at last not pointing to the first element , and when we second time pass the head to print the data, head will point to null. (ham apne head ke sath chhed chad kar rahe the isi lie vo kho gaya, to koi bhi operation karne ke lie extra pointer lena hi jis se hamara linked list ,disturb na ho)
+
+Note :- but in function we pass the , reference that act as parameter , variable which act as a new pointer. 
+
+
+## What will this function do?
+
+
+```javascript
+class Node{
+constructor(data){
+this.data=data; //node store data
+this.next=null; //and address of next node
+}
+}
+
+//create node with data
+let a=new Node("A");
+let b=new Node("B");
+let c=new Node("C");
+
+//link created nodes
+a.next=b;
+b.next=c;
+
+
+function display(head){
+if(head){
+  display(head.next)
+console.log(head.data)
+}
+}
+
+
+display(a)
+
+```
+
+Output :- It will print the data in reverse order. 
+
+Because it first go to the deepest level. and at the returning time it print the value.or the second line of every call stack run at returning time. Thats why it orint the list in reverse order. (it start returning from the base case and vaha jata hi jaha se call lagaya gaya ho,sare backe hue kam karte hue)
+
+
+## Length Method 
+
+Implement a method to find out the length of a Linked list (iterative and recursive)
+
+as we implement display , we can created a counter variable that calcualte the length. 
+
+
+```javascript
+class Node{
+constructor(data){
+this.data=data; //node store data
+this.next=null; //and address of next node
+}
+}
+
+//create node with data
+let a=new Node("A");
+let b=new Node("B");
+let c=new Node("C");
+
+//link created nodes
+a.next=b;
+b.next=c;
+
+
+// let count =0;
+// function length(head){
+// if(head){
+//   count++
+//   length(head.next)
+//   return count;
+// }
+
+// }
+
+
+let count =0;
+function length(head){
+  let count=0;
+while(head){
+  count++
+  head=head.next
+}
+return count;
+}
+
+
+console.log(length(a))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
