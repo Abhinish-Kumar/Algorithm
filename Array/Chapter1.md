@@ -376,8 +376,76 @@ console.log(arr); //[4, 5, 1, 2, 3]
 Do this without array methods.
 
 
-3:18
+# Q13) Given an array containing elements from 1 to 100 except one element in this range is missing. Find the missing element.
 
+Find the missing element from array
+- 99 elments are present initially
+
+- 1st aproach will be the search every elemnt from 1 to 100 in array of 100 elements
+
+```javascript 
+//1. given a array and a number x, Find out if x lies in the array or not if yes tehn print the index.
+
+let arr=[3,5,6,2,7,8];
+let x=8;
+for(let i=0;i<arr.length;i++){
+if(arr[i]==8){
+console.log("yes x is present in the array and its index is 
+ "+i);
+break; //if copy is there print two time
+}
+}
+
+
+//2. print all the indexes of its copy also
+
+let arr=[3,5,6,2,7,8,4,2,8,52,8];
+let x=8;
+for(let i=0;i<arr.length;i++){
+if(arr[i]==8){
+console.log("yes x is present in the array and its index is "+i);
+//break; 
+}
+}
+
+//output
+//**yes x is present in the array and its index is 5**
+//yes x is present in the array and its index is 8
+//yes x is present in the array and its index is 10
+
+
+// 3. Print the last occurance of it
+let arr=[3,5,6,2,7,8,4,2,8,52,8];
+let x=8;
+for(let i=arr.length;i>0;i--){
+if(arr[i]==8){
+console.log("yes x is present in the array and its index is "+i);
+break; 
+}
+}
+
+//Output :- yes x is present in the array and its index is 10
+
+
+//4. if not present then give message (use flag)
+let arr=[3,5,6,2,7,8,4,2,8,52,8];
+let x=8;
+let flag=false;
+for(let i=arr.length;i>0;i--){
+if(arr[i]==x){
+flag=true;
+break; 
+}
+}
+
+
+if(flag){
+console.log("yes x is present in the array ");
+}else{
+console.log("not found ");
+}
+
+```
 
 
 
