@@ -383,6 +383,7 @@ Find the missing element from array
 
 - 1st aproach will be the search every elemnt from 1 to 100 in array of 100 elements
 
+### linear search (search every element in array)
 ```javascript 
 //1. given a array and a number x, Find out if x lies in the array or not if yes tehn print the index.
 
@@ -431,41 +432,134 @@ break;
 let arr=[3,5,6,2,7,8,4,2,8,52,8];
 let x=8;
 let flag=false;
+let ind=-1;
 for(let i=arr.length;i>0;i--){
 if(arr[i]==x){
 flag=true;
+ind=i
 break; 
 }
 }
 
 
 if(flag){
-console.log("yes x is present in the array ");
+console.log("yes x is present in the array index is "+ind);
 }else{
 console.log("not found ");
 }
 
 ```
 
+Our question
+
+1st way to find the missing element in array (two loops to find missing element)
+
+100*100=10000
+
+2nd way (add sum of every element in array)
+
+```javascript
+//find the mussung number in the array
+let arr=[1,2,3,4,5,6,8,9,10];
+let sum=0;
+for(let i=0;i<arr.length;i++){
+  sum+=arr[i];
+}
+
+let sumOf10NaturalNo=0;
+
+for(let i=1;i<=10;i++){
+  sumOf10NaturalNo+=i
+}
+
+let missingNUmber=sumOf10NaturalNo-sum;
+
+// console.log(sumOf10NaturalNo,sum)
+console.log("missing number is "+ missingNUmber)//7
+
+```
+
+Time complexity :- loop 1 = O(n) loop 2 = O(n) ==> O(2n);
+Space Complexity :- O(1)
+
+```javascript
+//find the mussung number in the array
+let arr=[1,2,3,4,5,6,8,9,10];
+let sum=0;
+for(let i=0;i<arr.length;i++){
+  sum+=arr[i];
+}
+let n=arr.length+1;
+let sumOf10NaturalNo=(n*(n+1))/2;
 
 
+let missingNUmber=sumOf10NaturalNo-sum;
 
+// console.log(sumOf10NaturalNo,sum)
+console.log("missing number is "+ missingNUmber)//7
+```
 
+Time Complexity :- O(n)
+Space Complexity :- O(1)
 
+# Q14) WAP to find the duplicate element from a given array of integers.
 
+```javascript
+let arr=[2,3,4,5,6,7,6,9];
+for(let i=0;i<arr.length;i++){
+  for(let j=i+1;j<arr.length;j++){
+    if(arr[i]==arr[j]){
+      console.log("index is " + j)
+      break;
+    }
+  }
+}
 
+//index is 6
+```
 
+# Q15) FInd the unique number in a given array where all the elements are being repeated twice with one value being unique.
 
+unique element is coming once only
 
+what if we take one element and search remaining array and found its duplicate then what we should do. break ?
 
+break:- break two loops
 
+```javascript
+//reset pointer
+let arr=[2,2,3,3,4,4,5,5,6,7,7];
+for(let i=0;i<arr.length;i++){
+  for(let j=i+1;j<arr.length;j++){
+    if(arr[i]==arr[j]){
+      i++;
+      j=i+1;
+    }
+  }
+}
+```
 
+With flag
 
+```javascript
+let arr = [1, 3, 6,88, 1, 1, 2, 3,6];
 
+for (let i = 0; i < arr.length; i++) {
+  let flag = true;
 
+  for (let j = i+1; j < arr.length; j++) {
+    if ( arr[i] === arr[j]) {
+      flag = false;
+      break;
+    }
+  }
 
-
-
+  if (flag) {
+    console.log(arr[i]);
+    break;
+  }
+}
+```
 
 
 
